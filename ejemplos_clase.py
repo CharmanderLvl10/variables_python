@@ -4,21 +4,21 @@ Tipos de variables [Python]
 Ejemplos de clase
 ---------------------------
 Autor: Inove Coding School
-Version: 1.2
+Version: Clase Numero 2
 
 Descripcion:
 Programa creado para mostrar ejemplos prácticos de los visto durante la clase
 '''
 
-__author__ = "Alejandro"
-__email__ = "alumnos@inove.com.ar"
-__version__ = "1.2"
+__author__ = "Alejandro Villaboa"
+__email__ = "Alejandrocesarv@gmail.com"
+__version__ = "Clase Numero 2"
 
 
 def numbers():
     # Ejemplos varialbles numéricas
-    numero_1 = 2
-    numero_2 = 4
+    numero_1 = 4
+    numero_2 = 2
 
     suma = numero_1 + numero_2   # Operamos la suma
     # Imprimimos en consola el resultado

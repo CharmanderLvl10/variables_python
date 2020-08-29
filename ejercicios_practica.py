@@ -4,23 +4,23 @@ Tipos de variables [Python]
 Ejercicios de práctica
 ---------------------------
 Autor: Inove Coding School
-Version: 1.3
+Version: Ejercicio 2 de la Clase Numero 2
 
 Descripcion:
 Programa creado para que practiquen los conocimietos
 adquiridos durante la semana
 '''
 
-__author__ = "Inove Coding School"
-__email__ = "alumnos@inove.com.ar"
-__version__ = "1.3"
+__author__ = "Alejandro Villaboa"
+__email__ = "alejandrocesarv@gmail.com"
+__version__ = "Clase Numero 2"
 
 
 def ej1():
     # Ejercicios de práctica con números
     print('Nuestra primera calculadora')
     '''
-    Realice un calculadora, se ingresará por línea de comando dos
+    Realice un calculo, se ingresará por línea de comando dos
     números reales y se deberá calcular todas las operaciones entre ellos:
     - Suma
     - Resta
@@ -34,8 +34,25 @@ def ej1():
       ej: La suma entre 4.2 y 6.5 es 10.7
 
     '''
+    numero_1 = 2.5
+    numero_2 = 3.5
 
+    suma = numero_1 + numero_2
+    print('El resultado de la suma es', suma)
 
+    resta = numero_1 - numero_2
+    print('El resultado de la resta es', resta)
+
+    Multiplicación = numero_1 * numero_2
+    print('El resultado de la mulplicacion es', Multiplicación)
+
+    Division = numero_1 / numero_2
+    print('El resultado de la division es', Division)
+
+    Exponente = numero_1 ** numero_2
+    print('El resultado de la exponente es', Exponente)
+
+    
 def ej2():
     print('Ejercicios de práctica numérica y cadenas')
     '''
@@ -55,6 +72,20 @@ def ej2():
       entienda de que se está hablando.
 
     '''
+    print('Ingrese su Nombre y Apellido:')
+    nombre = str(input())
+    
+    print('Ingrese su DNI:')
+    dni = int(input())
+
+    print('Ingrese su edad:')
+    edad = int(input())
+
+    print('Ingrese su altura:')
+    altura = float(input())
+    
+    print('Nombre y DNI ingresado:', nombre, dni)
+    print('Nombre, Edad y Altura ingresada:', nombre, dni, altura)
 
 
 def ej3():
@@ -87,8 +118,24 @@ def ej3():
     https://www.pythonforbeginners.com/dictionary/python-split
 
     Cualquier duda con el método split pueden consultarla por el campus
-
     '''
+
+    print('Ingrese el Nombre y Apellido del Padre:')
+    nombre_1 = str(input())
+    print('El Nombre ingresado del Padre es:', nombre_1)
+
+    print('Ingrese el Nombre y Apellido de la Madre:')
+    nombre_2 = str(input())
+    print('El Nombre ingresado de la Madre es:', nombre_2)
+
+    print('Ingrese el Nombre del Hijo/a:')
+    nombre_3 = str(input())
+    print('El Solamente el Nombre del Hijo/a es:', nombre_3)
+
+    nombre_padre, apellido_padre = nombre_1.split(' ')
+    nombre_madre, apellido_madre = nombre_2.split(' ')
+
+    print('El Nombre de Familia Completo del Hijo/a es:', nombre_3, apellido_padre, apellido_madre)
 
 
 def ej4():
@@ -123,6 +170,21 @@ def ej4():
 
     Cualquier duda con el método split pueden consultarla por el campus
     '''
+    # Los nombres que elegi son Pablo Gomez y Ana Gomez
+    print('Ingrese el primer nombre y apellido de su familia:')
+    nombre_1 = str(input())
+    print('El primer nombre ingresado es:', nombre_1)
+
+    print('Ingrese el segundo nombre y apellido de su familia:')
+    nombre_2 = str(input())
+    print('El segundo nombre ingresado es:', nombre_2)
+
+    nombre_familia_1, apellido_familia_1 = nombre_1.split(' ')
+    nombre_familia_2, apellido_familia_2 = nombre_2.split(' ')
+
+    persona = apellido_familia_1 in apellido_familia_2
+
+    print(nombre_familia_1, 'es pariente de', nombre_familia_2, '?:', persona)
 
 
 def ej5():
@@ -150,11 +212,29 @@ def ej5():
     Cualquier duda con estos métodos pueden consultarla por el campus
     '''
 
+    print('Ingrese su nombre y apellido sin mayusculas:')
+    nombre_1 = str(input())
+    nombre_01, apellido_01 = nombre_1.split(' ')
+    nombre_0 = nombre_01.capitalize()
+    apellido_00 = apellido_01.capitalize()
+    print('Su nombre correcto se escribe:', nombre_0, apellido_00)
+
+    print('Ingrese su nombre y apellido solo en minuscula:')
+    nombre_2 = str(input())
+    nombre_mayusculas = nombre_2.upper()
+    print('Su nombre en mayusculas es:', nombre_mayusculas)
+
+    print('Ingrese su nombre y apellido solo en mayusculas:')
+    nombre_3 = str(input())
+    nombre_001, apellido_001 = nombre_3.split(' ')
+    nombre_002 = nombre_001.lower()
+    apellido_002 = apellido_001.lower()
+    print('Su nombre en minusculas es:',nombre_002, apellido_002)
 
 if __name__ == '__main__':
     print("Ejercicios de práctica")
     ej1()
-    # ej2()
-    # ej3()
-    # ej4()
-    # ej5()
+    ej2()
+    ej3()
+    ej4()
+    ej5()
